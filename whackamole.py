@@ -21,7 +21,7 @@ def main():
                     print(f"Mouse clicked at: ({mouse_x}, {mouse_y})")
                     print(f"Mole is at: ({mole_x}, {mole_y})")
                     if (mole_x <= mouse_x < mole_x + 32) and (mole_y <= mouse_y < mole_y + 32):
-                        mole_pos = (random.randint(0, 19) * 32, random.randint(0, 15) * 32)
+                        mole_pos = (random.randrange(0, 19) * 32, random.randrange(0, 15) * 32)
             screen.fill("light blue")
             xVal = 0
             for x in range(0, 640, 32):
